@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>groupId</groupId>
+    <groupId>Royal</groupId>
     <artifactId>autoBlock</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <properties>
         <maven.compiler.source>10</maven.compiler.source>
@@ -20,7 +20,26 @@
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>4.3.0</version>
+        </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>Royal</id>
+            <name>autoBlock</name>
+            <url>http://localhost:8081/repository/Royal-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>Royal</id>
+            <name>autoBlock-SNAPSHOT</name>
+            <url>http://localhost:8081/repository/Royal-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 
 
